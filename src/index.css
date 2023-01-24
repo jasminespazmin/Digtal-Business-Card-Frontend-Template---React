@@ -1,13 +1,273 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Bebas;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: Bebas,
     monospace;
+}
+
+.ProfileImg {
+  height: 100%;
+  width: 100%;
+  display: center;
+  border: 0px solid whitesmoke;
+  border-top-left-radius: .3pc;
+  border-top-right-radius: .3pc;
+
+}
+
+.InnerRoundedBox {
+  background-position: absolute;
+  background-color: rgba(196, 194, 194, 0.608);
+  width: 75%;
+  height: 50%;
+  border: 30px whitesmoke solid;
+  border-radius: 17px ;
+  margin: 15px;
+  padding: 2px;
+  padding-bottom: 50px;
+  border-bottom: solid white 50px;
+}
+
+.App {
+  position: relative;
+  display: flex;
+  background-color: #f6dec993;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding-left: 115px;
+  padding-top: 24px;
+  padding-bottom: 50px;
+}
+
+.AppHeader {
+ background: none;
+ display: flex;
+ flex-direction: column;
+ margin-bottom: 3px;
+ margin-top: 1px;
+}
+
+.AppHeader > h3 {
+  padding-top: -500px;
+}
+
+.AppHeader > h1 {
+  padding-bottom: 0px;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+.AppHeader > h4 {
+  margin-top: -10px;
+}
+
+button {
+  background-color: rgba(232, 113, 113, 0.937);
+  height: 91px;
+  width: 333px;
+  border: 0px white solid;
+  font-size: 33.11px;
+  font-style: bold;
+  color: white;
+  font: Lucida Sans Unicode;
+  border-radius: 3pc;
+  transition: .2s;
+  -ms-transform-origin-x: 0;
+  -ms-transform-origin-y: 125%;
+  letter-spacing: -.04rem;
+  box-shadow: .03px 3px rgba(252, 113, 113, 0.937);
+}
+
+button:hover {
+  background-color: rgba(232, 113, 113, 0.837);
+  border: 1.6px white solid;
+}
+
+
+.LearnButton {
+  margin-right: 40px;
+  padding-right: 5px;
+}
+
+.JoinNow {
+  margin-left: 40px;
+  padding-left: 5px;
+}
+
+.ArticleDiv {
+  display: flex;
+  flex-direction: column;
+  flex-basis: right;
+  align-items: flex-start;
+  border: 0 solid;
+  margin-top: 0;
+  margin-bottom: 3px;
+  padding-left: 73px;
+  font: Lucida Sans Unicode;
+}
+.ArticleDiv > h1 {
+  font-size: 22px;
+}
+
+.ArticleDiv p {
+  margin-top: -5px;
+  padding-top: 0px;
+}
+
+footer {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  align-items: center;
+  margin: 0px;
+  padding-left: 35px;
+  padding-top: 100px;
+}
+
+footer > a > h1 {
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  align-content: space-between;
+  overflow-wrap: initial;
+}
+
+.glow {
+  color: #fff;
+  text-align: center;
+  animation:  1s ease-in-out infinite alternate;
+  text-shadow: 0 0 5px #fe01b1;
+}
+.glow:hover {
+  color: #fff;
+  text-align: center;
+  animation:  1s ease-in-out infinite alternate;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  text-shadow: 0 0 5px #fe01b1, 0 0 25px #fe01b1, 0 0 50px #fe01b1,
+          0 0 75px #fe01b1, 0 0 100px #fe01b1;
+ 
+}
+
+footer > a {
+  width: 100%;
+  text-decoration: none;
+  align-content: space-between;
+  font-size: 11px;
+  letter-spacing: -.04rem;
+  border: 0 solid white;
+  margin: 0;
+  padding: 0;
+  transition: .5s linear;
+}
+footer > a:hover {
+  width: 100%;
+  text-decoration: none;
+  align-content: space-between;
+  font-size: 11px;
+  letter-spacing: -.04rem;
+  border: 0 solid white;
+  margin: 0;
+  padding: 0;
+  transition: .5s linear;
+  transform: scale(1.3);
+}
+
+footer > a:nth-child(5) {
+    position: relative;
+    padding-left: 200px;
+    padding-right: 0px;
+}
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .InnerRoundedBox {
+    margin-left: 0px;
+    width: 75vw;
+    height: 50vh;
+    border: 3px whitesmoke solid;
+    border-bottom: solid white 10px;
+  }
+ .App {
+  padding: 2px;
+ }
+ 
+ .ProfileImg {
+  height: auto;
+  width: auto;
+}
+.InnerRoundedBox {
+  margin-left: 0px;
+  padding-left: 10px;
+  width: 360px;
+  border-bottom: 1.5px;
+  align-content: flex-start;
+  background-color: rgba(7, 25, 9, .3);
+}
+
+button {
+  height: 40px;
+  width: 160px;
+  border: .4px white solid;
+  font-size: 24.11px;
+  display: row;
+}
+
+.LearnButton {
+  margin-right: 20px;
+  padding-right: 2.5px;
+}
+
+.JoinNow {
+  margin-left: 20px;
+  padding-left: 2.5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0px gold solid;
+}
+.ArticleDiv {
+  padding-left: 0px;
+  padding-bottom: -10px;
+}
+footer {
+  padding-top: 0px;
+  height: 100px;
+  display: flex;
+  width: 388px;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 0;
+}
+footer > a > h1 {
+  width: auto;
+  color: black;
+  align-content: space-between;
+  font-size: 9px;
+}
+footer > a:nth-child(5) {
+  padding-left: 0px;
+}
+
+.App {
+  margin: 2px;
+  padding: 0;
+
+}
 }
